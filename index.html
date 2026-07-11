@@ -9,8 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="louisiana.css">
 </head>
 <body>
+  <div class="bayou-sound" role="region" aria-label="Bayou Bash sound">
+    <button class="sound-toggle" type="button" aria-pressed="false">
+      <span aria-hidden="true">♫</span> Turn on the Bayou Bash sound
+    </button>
+    <audio id="bayouAudio" loop preload="none">
+      <source src="assets/louisiana-welcome.mp3" type="audio/mpeg">
+    </audio>
+  </div>
   <a class="skip" href="#main">Skip to content</a>
   <div class="site-shell">
     <header class="nav-wrap">
@@ -23,19 +32,19 @@
 
     <main id="main">
       <section id="home" class="hero">
-        <div class="hero-art art-one"></div><div class="hero-art art-two"></div><div class="fireflies" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="hero-art art-one"></div><div class="hero-art art-two"></div><div class="quarter-lace" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="fireflies" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> NEW ORLEANS, LOUISIANA <span></span></p>
+          <p class="eyebrow"><span></span> NEW ORLEANS &bull; LOUISIANA <span></span></p>
           <h1>Boogie Bobby's<br><em>Bayou Bash</em></h1>
           <p class="subhead">Bobby Vincent's Annual Birthday Celebration<br>&amp; Family Reunion</p>
           <p class="hero-text">Where family, food, music, and Louisiana roots come together.</p>
           <div class="hero-actions"><a class="button gold" href="#details">Join the celebration <b>↓</b></a><a class="button line" href="#bobby">Meet Boogie Bobby <b>→</b></a></div>
-          <div class="hero-meta"><span><b>Date</b> To Be Announced</span><span><b>Location</b> New Orleans, Louisiana</span><span><b>RSVP</b> Coming Soon</span></div>
+          <div class="hero-meta"><span><b>Date</b> To Be Announced</span><span><b>Location</b> The Crescent City</span><span><b>RSVP</b> Coming Soon</span></div>
         </div>
         <figure class="hero-photo"><img src="assets/bobby-gala.jpg" alt="Bobby Vincent at a family celebration"><figcaption><span>01</span> Celebrating another year of Boogie Bobby</figcaption></figure>
       </section>
 
-      <section class="ticker" aria-label="Bayou Bash values"><span>Family</span><i>✦</i><span>Louisiana Roots</span><i>✦</i><span>Food &amp; Music</span><i>✦</i><span>Generations of Love</span><i>✦</i><span>Family</span></section>
+      <section class="ticker" aria-label="Bayou Bash values"><span>Family</span><i>✦</i><span>Louisiana Roots</span><i>✦</i><span>Second-Line Spirit</span><i>✦</i><span>Food &amp; Music</span><i>✦</i><span>Generations of Love</span></section>
 
       <section id="bobby" class="story section">
         <div class="photo-stack"><img class="portrait" src="assets/bobby-home.jpg" alt="Bobby Vincent smiling in his home"><div class="name-card"><small>THE MAN BEHIND THE BASH</small><strong>BOOGIE<br>BOBBY</strong><i>Since 1969</i></div></div>
@@ -43,6 +52,16 @@
       </section>
 
       <section class="gather section"><div class="section-intro"><p class="eyebrow"><span></span> MORE THAN A BIRTHDAY</p><h2>Come for the birthday.<br><em>Stay for the memories.</em></h2><p>Bayou Bash is a joyful family reunion built around good food, music, storytelling, updated family photos, and the people who make the Vincent family what it is.</p></div><div class="gather-grid"><article><b>01</b><h3>Reconnect</h3><p>Spend real time with relatives near and far—elders, new babies, cousins, and everyone in between.</p></article><article><b>02</b><h3>Celebrate</h3><p>Honor Bobby, family milestones, graduations, weddings, births, and another beautiful year together.</p></article><article><b>03</b><h3>Pass it down</h3><p>Keep family stories, recipes, photographs, laughter, and Louisiana traditions moving through generations.</p></article></div></section>
+
+      <section class="nola-notes section" aria-labelledby="nola-title">
+        <div class="nola-title"><p class="eyebrow"><span></span> ROOTED IN THE CRESCENT CITY</p><h2 id="nola-title">A little more<br><em>New Orleans.</em></h2><p>Not a themed party&mdash;a family tradition with the warmth, rhythm, and hospitality of home.</p></div>
+        <div class="nola-grid">
+          <article><span class="nola-icon">✦</span><h3>Courtyard glow</h3><p>Warm lights, wrought-iron details, and the kind of evening that invites everyone to stay a little longer.</p></article>
+          <article><span class="nola-icon">♫</span><h3>Second-line spirit</h3><p>A celebration that moves with joy&mdash;good music, dancing cousins, and room for every generation.</p></article>
+          <article><span class="nola-icon">✿</span><h3>Louisiana flavor</h3><p>Family plates, favorite recipes, sweet stories, and the unmistakable feeling of being gathered at home.</p></article>
+          <article><span class="nola-icon">⌁</span><h3>River-city memories</h3><p>Photos, laughter, and a living family archive made in the city that holds so much Vincent history.</p></article>
+        </div>
+      </section>
 
       <section id="details" class="details section"><div class="details-head"><p class="eyebrow"><span></span> SAVE THE FEELING</p><h2>The next Bayou Bash<br>is <em>loading.</em></h2><p>The official date, venue, dress code, and RSVP details will be announced here first.</p></div><div class="details-card"><div><span class="label">DATE</span><strong>To Be Announced</strong></div><div><span class="label">TIME</span><strong>To Be Announced</strong></div><div><span class="label">LOCATION</span><strong>New Orleans, LA</strong></div><div><span class="label">ADDRESS</span><strong>Coming Soon</strong></div><div><span class="label">DRESS CODE</span><strong>To Be Announced</strong></div><a class="button cream disabled" href="#rsvp" aria-disabled="true">RSVP coming soon</a></div></section>
 
@@ -65,5 +84,6 @@
   </div>
   <dialog id="lightbox"><button class="close" aria-label="Close photo">×</button><img src="" alt=""><p></p></dialog>
   <script src="app.js"></script>
+  <script src="louisiana.js"></script>
 </body>
 </html>
